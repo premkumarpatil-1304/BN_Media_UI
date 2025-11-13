@@ -155,6 +155,9 @@ export default function Navbar() {
                     </Link>
                 </div>
             </div>
+            {/* Glowing Bottom Line */}
+            <div className="absolute bottom-0 left-0 w-full h-[2px] bg-[#0066FF] shadow-[0_0_6px_1px_#0066FF]"></div>
+
         </nav>
     );
 }

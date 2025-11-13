@@ -16,7 +16,7 @@ export default function WhyChooseUs() {
                 {/* Left: Image with rounded mask and accent shape */}
                 <div className="relative">
                     {/* Main image card */}
-                    <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border-2 border-[#0066FF]">
+                    <div className="relative aspect-4/3 rounded-3xl overflow-hidden shadow-xl border-2 border-[#0066FF]">
                         <Image
                             src="/why-choose.jpg"  // place at /public/why-choose.jpg
                             alt="BN Media team at work"
@@ -28,7 +28,7 @@ export default function WhyChooseUs() {
                     </div>
 
                     {/* Accent semi-circle shape behind (brand color) */}
-                    <div className="pointer-events-none absolute -bottom-16 right-0 translate-x-6 w-[60%] aspect-[2/1] rounded-t-full bg-[#0066FF]/15" />
+                    <div className="pointer-events-none absolute -bottom-16 right-0 translate-x-6 w-[60%] aspect-2/1 rounded-t-full bg-[#0066FF]/15" />
                 </div>
 
                 {/* Right: Content */}
@@ -51,7 +51,7 @@ export default function WhyChooseUs() {
                     <div className="space-y-6">
                         {points.map((item, idx) => (
                             <div key={idx} className="flex items-center gap-5">
-                                <div className="w-20 h-13 rounded-xl bg-gradient-to-br from-[#0066FF] to-[#004ACC] text-white flex items-center justify-center text-3xl shadow-md">
+                                <div className="w-20 h-13 rounded-xl bg-linear-to-br from-[#0066FF] to-[#004ACC] text-white flex items-center justify-center text-3xl shadow-md">
                                     {item.icon}
                                 </div>
                                 <p className="text-lg md:text-xl text-black">

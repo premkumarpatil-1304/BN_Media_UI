@@ -86,7 +86,7 @@ export default function About() {
                                 className="group relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border-2 border-gray-100 hover:border-[#0066FF] overflow-hidden"
                             >
                                 {/* Hover Effect Background */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-[#0066FF]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                <div className="absolute inset-0 bg-linear-to-br from-[#0066FF]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                                 {/* Icon */}
                                 <div className="text-6xl mb-4 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-500">
@@ -126,7 +126,7 @@ export default function About() {
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         {/* Visual */}
                         <div className="relative h-96 rounded-xl overflow-hidden shadow-2xl">
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#0066FF]/90 to-black/90 flex items-center justify-center">
+                            <div className="absolute inset-0 bg-linear-to-br from-[#0066FF]/90 to-black/90 flex items-center justify-center">
                                 <div className="text-center text-white p-8">
                                     <div className="text-6xl mb-4">🎯</div>
                                     <h3 className="text-3xl font-bold mb-2">Our Mission</h3>
@@ -193,7 +193,7 @@ export default function About() {
                     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                         {[1, 2, 3, 4,5,6,7 ].map((member) => (
                             <div key={member} className="bg-white p-8 rounded-xl shadow-md">
-                                <div className="w-32 h-32 bg-gradient-to-br from-[#0066FF] to-black rounded-full mx-auto mb-4 flex items-center justify-center text-white text-4xl font-bold">
+                                <div className="w-32 h-32 bg-linear-to-br from-[#0066FF] to-black rounded-full mx-auto mb-4 flex items-center justify-center text-white text-4xl font-bold">
                                     BN
                                 </div>
                                 <div className="h-24 bg-gray-100 rounded mb-2" />
@@ -206,7 +206,7 @@ export default function About() {
             </section>
 
             {/* CTA Section */}
-            <section className="bg-gradient-to-r from-[#0066FF] to-black text-white py-16 px-4">
+            <section className="bg-linear-to-r from-[#0066FF] to-black text-white py-16 px-4">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Business?</h2>
                     <p className="text-xl text-gray-200 mb-8">Let's discuss how BN Media can help you grow online</p>

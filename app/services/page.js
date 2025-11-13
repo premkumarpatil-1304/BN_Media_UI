@@ -122,19 +122,18 @@ export default function Services() {
     return (
         <main className="min-h-screen">
             {/* Hero Section */}
-            <section className="bg-linear-to-br from-b-[#FFFFFF] to-purple-800 h-[56vh] text-white py-25 px-4">
+            <section className="bg-black text-white h-[75vh] flex items-center mt-20 py-10 justify-center px-4">
                 <div className="max-w-6xl mx-auto text-center">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
                         Complete Digital Solutions for Growing Businesses
                     </h1>
-                    <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
+                    <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-6">
                         From digital marketing to custom software — everything you need to succeed online,
                         delivered by Akola's trusted digital agency.
                     </p>
-                    <button className='bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg m-3 transition-colors'>
+                    <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
                         Get Free Consultation
                     </button>
-
                 </div>
             </section>
 
