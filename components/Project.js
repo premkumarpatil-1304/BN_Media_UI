@@ -79,7 +79,7 @@ export default function Project() {
                             style={{ transitionDelay: `${i * 70}ms` }}
                         >
                             {/* Image */}
-                            <div className="relative aspect-[16/10]">
+                            <div className="relative aspect-16/10">
                                 <Image
                                     src={p.image}
                                     alt={p.title}
@@ -89,7 +89,7 @@ export default function Project() {
                                     priority={i < 2}
                                 />
                                 {/* Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent opacity-70 group-hover:opacity-80 transition-opacity" />
+                                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/0 to-transparent opacity-70 group-hover:opacity-80 transition-opacity" />
                             </div>
 
                             {/* Content */}

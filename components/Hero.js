@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import HeroCarousel from './HeroCarousel';
 
 export default function Hero() {
     const [currentVideo, setCurrentVideo] = useState(0);
@@ -98,7 +99,16 @@ export default function Hero() {
                             </Link>
                         </div>
                     </div>
-
+                    <div className="relative">
+                        <HeroCarousel
+                            slides={[
+                                { src: "/hero/slide1.jpg", alt: "Creative shoot 1" },
+                                { src: "/hero/slide2.jpg", alt: "Creative shoot 2" },
+                                { src: "/hero/slide3.jpg", alt: "Creative shoot 3" },
+                            ]}
+                            interval={5000}
+                        />
+                    </div>
                     {/* Right Side - Video Carousel (same as before) */}
                     {/* ... video carousel code ... */}
                 </div>
