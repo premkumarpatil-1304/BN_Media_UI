@@ -50,30 +50,66 @@ export default function ContactPage() {
 
   return (
     <main className="min-h-screen">
-      {/* Hero */}
+      {/* Hero – Contact */}
       <section className="bg-black text-white">
-        <div className="max-w-7xl h-[75vh] mx-auto px-4 py-30 mt-10 text-center">
-          
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
-            Let’s Talk About Your Project
-          </h1>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Reach out and the BN Media team will get back to you shortly.
-          </p>
+        <div className="max-w-7xl mx-auto px-4 min-h-svh flex items-center">
+          <div className="w-full text-center">
+            <span className="inline-block bg-[#0066FF] text-white px-5 py-1.5 rounded-full text-xs font-semibold tracking-wide mb-6">
+              Contact Us
+            </span>
 
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+              Let’s Talk About Your Project
+            </h1>
+            <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-8">
+              Reach out and the BN Media team will get back to you shortly. Tell us about your goals and we’ll map a clear path to results.
+            </p>
 
-          <h1 className="text-4xl md:text-5xl mt-15 font-bold text-center mb-4">
-            Let’s Build Something Great Together
-          </h1>
-          <p className="text-lg text-gray-300 text-center mb-10">
-            Whether you need a new website, a marketing strategy, or a full digital transformation — we’re just one message away.
-          </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-3">
+              Let’s Build Something Great Together
+            </h2>
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-10">
+              Whether you need a new website, a marketing strategy, or a full digital transformation — we’re just one message away.
+              Serving Akola and remote clients with fast, transparent, and ROI‑focused delivery.
+            </p>
 
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="#contact-form"
+                className="bg-[#0066FF] hover:bg-[#0052CC] text-white font-bold py-3.5 px-8 rounded-lg transition-colors shadow-lg text-center"
+              >
+                Start Your Inquiry
+              </a>
+              <a
+                href="mailto:info@thebnmedia.com"
+                className="border-2 border-white text-white hover:bg-white hover:text-black font-bold py-3.5 px-8 rounded-lg transition-colors text-center"
+              >
+                Email Us Directly
+              </a>
+            </div>
+
+            {/* Quick info chips */}
+            <div className="mt-10 flex flex-wrap gap-3 justify-center">
+              <span className="bg-white/10 text-white px-4 py-2 rounded-lg text-sm border border-white/10">
+                Akola • Maharashtra • 444005
+              </span>
+              <span className="bg-white/10 text-white px-4 py-2 rounded-lg text-sm border border-white/10">
+                Vitthal Nagar, Mothi Umari
+              </span>
+              <a
+                href="tel:+918767587595"
+                className="bg-white/10 text-white px-4 py-2 rounded-lg text-sm border border-white/10 hover:bg-white/20 transition-colors"
+              >
+                +91 87675 87595
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section className="bg-white">
+      <section className="bg-white" id="contact-form">
         <div className="max-w-7xl mx-auto px-4 py-16 grid lg:grid-cols-2 gap-12">
           {/* Left: Form */}
           <div className="bg-white rounded-2xl border-2 border-gray-100 shadow-sm p-6 md:p-8">

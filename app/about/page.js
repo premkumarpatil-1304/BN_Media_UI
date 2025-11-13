@@ -28,15 +28,15 @@ export default function About() {
         <main className="min-h-screen">
             {/* Hero Section (split: left image, right content) */}
             <section className="bg-black text-white">
-                <div className="max-w-7xl mx-auto px-4 py-30 grid lg:grid-cols-2 gap-12 items-center">
+                <div className="max-w-7xl mx-auto px-4 lg:py-12 py-10 min-h-svh grid lg:grid-cols-2 gap-12 items-center">
                     {/* Left: Media */}
                     <div className="relative">
                         <div className="relative aspect-16/10 rounded-2xl overflow-hidden border-2 border-[#0066FF] shadow-xl">
                             <Image
-                                src="/public/about_section_images/img1.jpg" // put your image at /public/hero.jpg
+                                src="/about_section_images/img1.jpg" // place file at /public/about_section_images/img1.jpg
                                 alt="BN Media showcase"
                                 fill
-                                sizes="(max-width: 1024px) 100vw, 50vw"
+                                sizes="(max-width:1024px) 100vw, 50vw"
                                 className="object-cover"
                                 priority
                             />
@@ -46,20 +46,34 @@ export default function About() {
 
                     {/* Right: Content */}
                     <div className="text-center lg:text-left">
-                        {/* <span className="inline-block bg-[#0066FF] text-white px-6 py-2 rounded-full text-sm font-semibold mb-6">
-                            Welcome to BN Media
-                        </span> */}
+                        <span className="inline-block bg-[#0066FF] text-white px-6 py-2 rounded-full text-xs font-semibold tracking-wide mb-6">
+                            About BN Media
+                        </span>
 
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                            We&apos;re BN Media — Akola&apos;s Trusted Digital &amp; Software Agency.
+                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight mb-6">
+                            We’re BN Media — Akola’s Trusted Digital &amp; Software Agency.
                         </h1>
 
-                        <p className="text-xl md:text-2xl text-gray-300 max-w-2xl lg:max-w-none mx-auto lg:mx-0 leading-relaxed">
-                            BN Media helps local and growing brands go online, automate processes, and scale with digital tools.
-                        </p>
+                        <div className="space-y-4 text-gray-300 text-lg md:text-xl leading-relaxed max-w-2xl lg:max-w-none mx-auto lg:mx-0">
+                            <p>
+                                BN Media is Akola’s trusted digital marketing agency offering web development, e‑commerce, SEO,
+                                social media, Google Business Profile optimization, and influencer marketing to help your business
+                                stand out online.
+                            </p>
+                            <p>
+                                At BN Media, we specialize in transforming businesses into powerful brands. From digital marketing
+                                and social media to website development and branding, we provide result‑driven solutions tailored for
+                                Akola businesses.
+                            </p>
+                            <p>
+                                Our mission is simple: to help local entrepreneurs, startups, and companies reach more customers, build
+                                trust, and achieve consistent growth — all with smart, affordable, and effective strategies.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
+
 
             {/* Stats Section */}
             <section className="py-20 px-4 bg-linear-to-b from-white to-gray-50 relative overflow-hidden">

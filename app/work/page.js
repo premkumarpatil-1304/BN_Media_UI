@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Project from "@/components/Project";
 
 export default function WorkPage() {
   const steps = [
@@ -58,12 +59,12 @@ export default function WorkPage() {
     <main className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-black text-white">
-        <div className="max-w-7xl h-[90vh] mx-auto px-4 py-20 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-4 min-h-svh grid lg:grid-cols-2 gap-12 items-center py-12">
           {/* Left Image */}
           <div className="relative">
             <div className="relative aspect-16/10 rounded-2xl overflow-hidden border-2 border-[#0066FF] shadow-xl">
               <Image
-                src=""
+                src="/work-hero.jpg"   // put your image at /public/work-hero.jpg
                 alt="BN Media project snapshots"
                 fill
                 sizes="(max-width:1024px) 100vw, 50vw"
@@ -79,10 +80,10 @@ export default function WorkPage() {
             <span className="inline-block bg-[#0066FF] text-white px-6 py-2 rounded-full text-sm font-semibold mb-6">
               Our Work
             </span>
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
               Results That Move Businesses Forward
             </h1>
-            <p className="text-gray-300 text-lg">
+            <p className="text-gray-300 text-lg md:text-xl leading-relaxed max-w-2xl lg:max-w-none mx-auto lg:mx-0">
               Explore how BN Media delivers brand, web, and growth systems that help Akola businesses scale with confidence.
             </p>
           </div>
@@ -118,7 +119,7 @@ export default function WorkPage() {
       </section>
 
       {/* Work Highlights */}
-      <section className="bg-gray-50">
+      {/* <section className="bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 py-16">
           <div className="flex items-center justify-between gap-6 mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-black">Selected Work Highlights</h2>
@@ -157,7 +158,8 @@ export default function WorkPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+      <Project />
 
       {/* Benefits Section */}
       <section className="bg-white">

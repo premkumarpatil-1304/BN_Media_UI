@@ -122,18 +122,53 @@ export default function Services() {
     return (
         <main className="min-h-screen">
             {/* Hero Section */}
-            <section className="bg-black text-white h-[75vh] flex items-center mt-20 py-10 justify-center px-4">
-                <div className="max-w-6xl mx-auto text-center">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-                        Complete Digital Solutions for Growing Businesses
-                    </h1>
-                    <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-6">
-                        From digital marketing to custom software — everything you need to succeed online,
-                        delivered by Akola's trusted digital agency.
-                    </p>
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
-                        Get Free Consultation
-                    </button>
+            <section className="bg-black text-white">
+                <div className="max-w-7xl mx-auto px-4 min-h-svh flex items-center justify-center">
+                    <div className="text-center">
+                        <span className="inline-block bg-[#0066FF] text-white px-5 py-1.5 rounded-full text-xs font-semibold tracking-wide mb-6">
+                            Services
+                        </span>
+
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                            Complete Digital Solutions for Growing Businesses
+                        </h1>
+
+                        <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-10">
+                            From digital marketing to custom software — everything you need to succeed online,
+                            delivered by Akola&apos;s trusted digital agency.
+                        </p>
+
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a
+                                href="/contact"
+                                className="bg-[#0066FF] hover:bg-[#0052CC] text-white font-bold py-3.5 px-8 rounded-lg transition-colors shadow-lg text-center"
+                            >
+                                Get Free Consultation
+                            </a>
+                            <a
+                                href="/services"
+                                className="border-2 border-white text-white hover:bg-white hover:text-black font-bold py-3.5 px-8 rounded-lg transition-colors text-center"
+                            >
+                                Explore Services
+                            </a>
+                        </div>
+
+                        {/* Optional small trust row */}
+                        <div className="mt-10 flex flex-wrap justify-center gap-4">
+                            <div className="bg-white/10 px-5 py-2 rounded-lg border border-white/10">
+                                <span className="text-[#0066FF] font-bold">50+</span>
+                                <span className="text-gray-300 ml-2">Projects</span>
+                            </div>
+                            <div className="bg-white/10 px-5 py-2 rounded-lg border border-white/10">
+                                <span className="text-[#0066FF] font-bold">10+</span>
+                                <span className="text-gray-300 ml-2">Industries</span>
+                            </div>
+                            <div className="bg-white/10 px-5 py-2 rounded-lg border border-white/10">
+                                <span className="text-[#0066FF] font-bold">100%</span>
+                                <span className="text-gray-300 ml-2">Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
