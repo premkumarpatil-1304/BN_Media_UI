@@ -122,7 +122,7 @@ export default function Services() {
     return (
         <main className="min-h-screen">
             {/* Hero Section */}
-            <section className="bg-linear-to-br from-b-[#FFFFFF] to-purple-800 text-white py-10 px-4">
+            <section className="bg-linear-to-br from-b-[#FFFFFF] to-purple-800 h-[56vh] text-white py-25 px-4">
                 <div className="max-w-6xl mx-auto text-center">
                     <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                         Complete Digital Solutions for Growing Businesses
@@ -131,6 +131,10 @@ export default function Services() {
                         From digital marketing to custom software — everything you need to succeed online,
                         delivered by Akola's trusted digital agency.
                     </p>
+                    <button className='bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg m-3 transition-colors'>
+                        Get Free Consultation
+                    </button>
+
                 </div>
             </section>
 
@@ -138,7 +142,7 @@ export default function Services() {
             {services.map((service, index) => (
                 <section
                     key={service.id}
-                    className={`py-20 px-4 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
+                    className={`py-15 px-4 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
                 >
                     <div className="max-w-7xl mx-auto">
                         {/* Service Header */}

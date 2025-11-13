@@ -71,7 +71,7 @@ export default function Hero() {
                             Welcome to BN Media
                         </span>
 
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
                             We Build Digital Brands That{' '}
                             <span className="text-[#0066FF]">
                                 {displayedText}
