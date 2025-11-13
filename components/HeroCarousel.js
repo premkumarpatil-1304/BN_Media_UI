@@ -32,7 +32,7 @@ export default function HeroCarousel({
 
     return (
         <div
-            className="relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-[#0066FF] shadow-xl"
+            className="relative aspect-16/10 rounded-2xl overflow-hidden border-2 border-[#0066FF] shadow-xl"
             onMouseEnter={pause}
             onMouseLeave={resume}
         >
@@ -50,7 +50,7 @@ export default function HeroCarousel({
                         className="object-cover"
                         priority={i === 0}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-tr from-black/40 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-linear-to-tr from-black/40 via-transparent to-transparent" />
                 </div>
             ))}
 
