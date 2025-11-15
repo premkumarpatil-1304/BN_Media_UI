@@ -59,12 +59,12 @@ export default function WorkPage() {
     <main className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-black text-white">
-        <div className="max-w-7xl mx-auto px-4 min-h-svh grid lg:grid-cols-2 gap-12 items-center py-12">
+        <div className="max-w-7xl mx-auto px-4 mt-10 min-h-svh grid lg:grid-cols-2 gap-12 items-center py-12">
           {/* Left Image */}
           <div className="relative">
             <div className="relative aspect-16/10 rounded-2xl overflow-hidden border-2 border-[#0066FF] shadow-xl">
               <Image
-                src="/work-hero.jpg"   // put your image at /public/work-hero.jpg
+                src="/work_page_img/work_hero.png"   // put your image at /public/work-hero.jpg
                 alt="BN Media project snapshots"
                 fill
                 sizes="(max-width:1024px) 100vw, 50vw"

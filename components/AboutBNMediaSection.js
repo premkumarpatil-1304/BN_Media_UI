@@ -9,7 +9,7 @@ export default function AboutBNMediaSection() {
                 <div className="relative">
                     <div className="relative aspect-16/10 rounded-2xl overflow-hidden border-2 border-[#0066FF] shadow-xl">
                         <Image
-                            src="/about-hero.jpg" // put your image at /public/about-hero.jpg
+                            src="/hero_section_images/hero_four_image.png" // put your image at /public/about-hero.jpg
                             alt="BN Media team and creative workspace"
                             fill
                             sizes="(max-width: 1024px) 100vw, 50vw"

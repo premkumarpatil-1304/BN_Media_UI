@@ -68,7 +68,7 @@ export default function Hero() {
 
                     {/* Left Side - Content */}
                     <div className="text-center lg:text-left">
-                        <span className="inline-block bg-[#0066FF] text-white px-6 py-2 rounded-full text-sm font-semibold mb-6 animate-bounce">
+                        <span className="inline-block bg-[#0066FF] text-white px-6 py-2 mt-4 rounded-full text-sm font-semibold mb-6 animate-bounce">
                             Welcome to BN Media
                         </span>
 
@@ -102,9 +102,9 @@ export default function Hero() {
                     <div className="relative">
                         <HeroCarousel
                             slides={[
-                                { src: "/hero/slide1.jpg", alt: "Creative shoot 1" },
-                                { src: "/hero/slide2.jpg", alt: "Creative shoot 2" },
-                                { src: "/hero/slide3.jpg", alt: "Creative shoot 3" },
+                                { src: "/hero_section_images/hero_two_image.png", alt: "Creative shoot 1" },
+                                { src: "/hero_section_images/hero_one_image.png", alt: "Creative shoot 2" },
+                                { src: "/hero_section_images/hero_three_image.png   ", alt: "Creative shoot 3" },
                             ]}
                             interval={5000}
                         />

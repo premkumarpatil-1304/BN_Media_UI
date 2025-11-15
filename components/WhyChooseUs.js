@@ -18,7 +18,7 @@ export default function WhyChooseUs() {
                     {/* Main image card */}
                     <div className="relative aspect-4/3 rounded-3xl overflow-hidden shadow-xl border-2 border-[#0066FF]">
                         <Image
-                            src="/why-choose.jpg"  // place at /public/why-choose.jpg
+                            src="/hero_section_images/hero_five_image.png"  // place at /public/why-choose.jpg
                             alt="BN Media team at work"
                             fill
                             sizes="(max-width:1024px) 100vw, 50vw"

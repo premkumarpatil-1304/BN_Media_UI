@@ -28,7 +28,7 @@ export default function About() {
         <main className="min-h-screen">
             {/* Hero Section (split: left image, right content) */}
             <section className="bg-black text-white">
-                <div className="max-w-7xl mx-auto px-4 lg:py-12 py-10 min-h-svh grid lg:grid-cols-2 gap-12 items-center">
+                <div className="max-w-7xl mx-auto px-4 lg:py-12 py-10 mt-15 min-h-svh grid lg:grid-cols-2 gap-12 items-center">
                     {/* Left: Media */}
                     <div className="relative">
                         <div className="relative aspect-16/10 rounded-2xl overflow-hidden border-2 border-[#0066FF] shadow-xl">
@@ -196,28 +196,61 @@ export default function About() {
                 </div>
             </section>
 
-            {/* Team Placeholder Section */}
-            <section className="py-16 px-4 bg-gray-50">
+            {/* Team Section */}
+            {/* Team Section */}
+            <section className="py-20 px-4 bg-gray-50">
                 <div className="max-w-6xl mx-auto text-center">
-                    <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">Meet Our Team</h2>
-                    <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+                    {/* Section Title */}
+                    <h2 className="text-4xl md:text-5xl font-extrabold text-black mb-4">
+                        Meet Our Team
+                    </h2>
+                    <p className="text-lg md:text-xl text-gray-600 mb-14 max-w-2xl mx-auto">
                         Passionate professionals dedicated to your success
                     </p>
 
-                    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-                        {[1, 2, 3, 4,5,6,7 ].map((member) => (
-                            <div key={member} className="bg-white p-8 rounded-xl shadow-md">
-                                <div className="w-32 h-32 bg-linear-to-br from-[#0066FF] to-black rounded-full mx-auto mb-4 flex items-center justify-center text-white text-4xl font-bold">
-                                    BN
+                    {/* Team Grid */}
+                    <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+                        {[
+                            { name: "Chetan Patil", role: "Video Editor", img: "/members/chetan_patil.png" },
+                            { name: "Ainkya Kurhade ", role: "Social Media Manager", img: "/members/social_media.png" },
+                            { name: "Gaurav Thombre", role: "Manager", img: "/members/manager.jpeg" },
+                            { name: "Durgesh Nikalje", role: "Video Editor", img: "/members/video_editor.jpeg" },
+                            { name: "Abhishek Nage", role: "Developer", img: "/members/abhishek.jpeg" },
+                        ].map((member, index) => (
+                            <div
+                                key={index}
+                                style={{ animationDelay: `${index * 120}ms` }}
+                                className="rounded-2xl bg-white p-6 shadow-lg border border-gray-100 hover:border-[#0066FF]
+          transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.03]
+          opacity-0 animate-fadeInUp"
+                            >
+                                {/* Animated Photo Box */}
+                                <div className="relative w-40 h-40 mx-auto mb-5 rounded-xl overflow-hidden
+            group shadow-md shadow-[#0066FF]/20
+            hover:shadow-xl hover:shadow-[#0066FF]/40 transition-all duration-500
+            bg-linear-to-br from-[#0066FF]/20 to-[#ffffff]"
+                                >
+                                    <div className="absolute inset-0 bg-white/10 backdrop-blur-[2px]" />
+
+                                    <Image
+                                        src={member.img}
+                                        alt={member.name}
+                                        fill
+                                        className="object-cover group-hover:scale-110 transition-transform duration-700"
+                                    />
                                 </div>
-                                <div className="h-24 bg-gray-100 rounded mb-2" />
-                                <div className="h-4 bg-gray-100 rounded w-3/4 mx-auto" />
-                                <p className="text-gray-400 mt-4 text-sm italic">Team member details coming soon</p>
+
+                                {/* Name */}
+                                <h3 className="text-xl font-bold text-black tracking-tight">{member.name}</h3>
+
+                                {/* Role */}
+                                <p className="text-sm font-semibold text-[#0066FF] mt-1">{member.role}</p>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
+
 
             {/* CTA Section */}
             <section className="bg-linear-to-r from-[#0066FF] to-black text-white py-16 px-4">
