@@ -9,25 +9,25 @@ const projects = [
     {
         title: "Multipletaask Holidays",
         url: "https://multipletaaskholidays.org/",
-        image: "/projects/multipletaaskholidays.jpg",
+        image: "/project_photos/multiple_holidays.png",
         tag: "Travel & Tours",
     },
     {
         title: "RDL Imports & Exports",
         url: "https://rdlimportsandexports.com/",
-        image: "/projects/rdl-impex.jpg",
+        image: "/project_photos/milan_dress.png",
         tag: "Export / Food",
     },
     {
         title: "Milan Dresses",
         url: "https://milandresses.in/",
-        image: "/projects/milan-dresses.jpg",
+        image: "/project_photos/milan_dress.png",
         tag: "Fashion / Retail",
     },
     {
         title: "Acerus Pharma",
         url: "https://aceruspharma.in/",
-        image: "/projects/acerus-pharma.jpg",
+        image: "/project_photos/acerus_pharma.png",
         tag: "Healthcare",
     },
     {
@@ -39,7 +39,7 @@ const projects = [
     {
         title: "SSIS",
         url: "https://ssis.org.in/",
-        image: "/projects/ssis.jpg",
+        image: "/project_photos/ssis.png",
         tag: "Education",
     },
 ];

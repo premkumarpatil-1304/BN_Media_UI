@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import LocationMap from "../../components/LocationMap";
 
 export default function ContactPage() {
   const [form, setForm] = useState({
@@ -321,6 +322,7 @@ export default function ContactPage() {
           </aside>
         </div>
       </section>
+      <LocationMap />
     </main>
   );
 }
