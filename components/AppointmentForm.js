@@ -27,18 +27,17 @@ export default function AppointmentForm() {
                 process.env.NEXT_PUBLIC_EMAILJS_APPOINTMENT_TEMPLATE_ID,
                 formRef.current
             );
-            console.log("EmailJS response:", res); // expect { status: 200, text: "OK" }
+            console.log("EmailJS response:", res);
             setStatus({
                 type: "success",
-                message: "Appointment request sent! We’ll contact you shortly to confirm.",
+                message: "Appointment request sent! We'll contact you shortly to confirm.",
             });
             formRef.current.reset();
         } catch (error) {
             console.error("EmailJS Error:", error?.text || error);
             setStatus({
                 type: "error",
-                message:
-                    "Failed to book appointment. Please verify your details and try again, or email info@thebnmedia.com.",
+                message: "Failed to book appointment. Please verify your details and try again, or email info@thebnmedia.com.",
             });
         } finally {
             setIsSubmitting(false);
@@ -143,7 +142,9 @@ export default function AppointmentForm() {
                             {/* Name and Email */}
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div>
-                                    <label htmlFor="name" className="block text-black font-semibold mb-2">Full Name *</label>
+                                    <label htmlFor="name" className="block text-black font-semibold mb-2">
+                                        Full Name *
+                                    </label>
                                     <input
                                         type="text"
                                         id="name"
@@ -154,7 +155,9 @@ export default function AppointmentForm() {
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="email" className="block text-black font-semibold mb-2">Email Address *</label>
+                                    <label htmlFor="email" className="block text-black font-semibold mb-2">
+                                        Email Address *
+                                    </label>
                                     <input
                                         type="email"
                                         id="email"
@@ -169,7 +172,9 @@ export default function AppointmentForm() {
                             {/* Phone and Company */}
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div>
-                                    <label htmlFor="phone" className="block text-black font-semibold mb-2">Phone Number *</label>
+                                    <label htmlFor="phone" className="block text-black font-semibold mb-2">
+                                        Phone Number *
+                                    </label>
                                     <input
                                         type="tel"
                                         id="phone"
@@ -180,7 +185,9 @@ export default function AppointmentForm() {
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="company" className="block text-black font-semibold mb-2">Company/Business Name</label>
+                                    <label htmlFor="company" className="block text-black font-semibold mb-2">
+                                        Company/Business Name
+                                    </label>
                                     <input
                                         type="text"
                                         id="company"
@@ -193,7 +200,9 @@ export default function AppointmentForm() {
 
                             {/* Service Selection */}
                             <div>
-                                <label htmlFor="service" className="block text-black font-semibold mb-2">Service Interested In *</label>
+                                <label htmlFor="service" className="block text-black font-semibold mb-2">
+                                    Service Interested In *
+                                </label>
                                 <select
                                     id="service"
                                     name="service"
@@ -218,7 +227,9 @@ export default function AppointmentForm() {
                             {/* Date and Time */}
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div>
-                                    <label htmlFor="date" className="block text-black font-semibold mb-2">Preferred Date *</label>
+                                    <label htmlFor="date" className="block text-black font-semibold mb-2">
+                                        Preferred Date *
+                                    </label>
                                     <input
                                         type="date"
                                         id="date"
@@ -229,7 +240,9 @@ export default function AppointmentForm() {
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="time" className="block text-black font-semibold mb-2">Preferred Time *</label>
+                                    <label htmlFor="time" className="block text-black font-semibold mb-2">
+                                        Preferred Time *
+                                    </label>
                                     <select
                                         id="time"
                                         name="time"
@@ -250,11 +263,13 @@ export default function AppointmentForm() {
 
                             {/* Additional Details */}
                             <div>
-                                <label htmlFor="details" className="block text-black font-semibold mb-2">Additional Details</label>
+                                <label htmlFor="details" className="block text-black font-semibold mb-2">
+                                    Additional Details
+                                </label>
                                 <textarea
                                     id="details"
                                     name="details"
-                                    rows="4"
+                                    rows={4}
                                     className="w-full px-4 py-3 border-2 text-black border-gray-200 rounded-lg focus:border-[#0066FF] focus:outline-none transition-colors resize-none"
                                     placeholder="Tell us more about your requirements..."
                                 />
